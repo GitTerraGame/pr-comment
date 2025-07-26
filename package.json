@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "A Node.js module use in CI/CD pipeline to leave a comment on Pull Requests about the GitTerra map that was generated when said pull request was merged.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gitterra/pr-comment.git"
