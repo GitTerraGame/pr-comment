@@ -1,6 +1,6 @@
 {
   "name": "@gitterra/pr-comment",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Node.js module use in CI/CD pipeline to leave a comment on Pull Requests about the GitTerra map that was generated when said pull request was merged.",
   "main": "index.js",
   "scripts": {
