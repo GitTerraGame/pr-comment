@@ -1,0 +1,36 @@
+{
+  "name": "@gitterra/pr-comment",
+  "version": "0.1.0",
+  "description": "A Node.js module use in CI/CD pipeline to leave a comment on Pull Requests about the GitTerra map that was generated when said pull request was merged.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitterra/pr-comment.git"
+  },
+  "keywords": [
+    "gitterra",
+    "game",
+    "map",
+    "pr",
+    "pull-request",
+    "comment",
+    "github",
+    "gitlab",
+    "ci",
+    "cd",
+    "automation"
+  ],
+  "author": "Chernyshev DEV",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gitterra/pr-comment/issues"
+  },
+  "homepage": "https://github.com/gitterra/pr-comment#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
