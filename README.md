@@ -15,6 +15,7 @@ run-name: Playing 🌎 GitTerra on ${{ github.repository }} 🗺️
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   ...
+  id-token: write # Allows the action to request an ID token for authentication
   pull-requests: write # Allows the action to add a comment to the pull request
 
 jobs:
@@ -35,4 +36,6 @@ This only shows the relevant part of the workflow file, you can find the full ex
 
 ### Permissions
 
-The action requires additional `pull-requests: write` permission to be able to add a comment to the pull request. This is set in the `permissions` section of the workflow file.
+The action requires `id-token: write` permission to request an ID token for authentication and `pull-requests: write` permission to be able to add a comment to the pull request.
+
+These permissions are set in the `permissions` section of the workflow file.
