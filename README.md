@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Leave a 💬 comment on PR with preview 🗺️ image and 🔗 link to the site
         uses: GitTerraGame/pr-comment@main # Calls the PR Comment action
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }} # Provide the GitHub token to authenticate with the GitHub API
 ```
 
 This only shows the relevant part of the workflow file, you can find the full example in the [Play GitTerra Action](https://github.com/GitTerraGame/Play-GitTerra-Action?tab=readme-ov-file#deploy-the-map-to-github-pages) repository
