@@ -1,0 +1,20 @@
+name: gitterra-pr-comment
+description: This action will post a preview image and a link of your generated GitTerra map in the PR that was merged.
+author: GitTerra Team
+
+branding:
+  icon: "map"
+  color: "blue"
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v4
+    - run: npm install @gitterra/pr-comment
+      shell: bash
+    - uses: actions/github-script@v7
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const addGitterraPRComment = require('@gitterra/pr-comment');
+          await addGitterraPRComment.default({github, context});
