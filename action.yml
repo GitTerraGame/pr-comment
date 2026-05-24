@@ -13,10 +13,10 @@ branding:
 runs:
   using: "composite"
   steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - run: npm install @gitterra/pr-comment
       shell: bash
-    - uses: actions/github-script@v7
+    - uses: actions/github-script@v9
       with:
         github-token: ${{ inputs.github-token }}
         script: |
